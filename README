@@ -1,0 +1,9 @@
+Slides Tryton Framework
+=======================
+
+
+invoke::
+
+    pinpoint tryton.pin
+
+more information about pinpoint: https://wiki.gnome.org/Apps/Pinpoint
