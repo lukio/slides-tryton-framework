@@ -4,28 +4,27 @@
 [font=Sans 50px]
 [duration=5.000000]
 
+--
+¿Quienes somos?
+
+ ❥ Luciano Rossi
+
+ ❥ Sebastián Marró
+    
 -- 
 ¡Bienvenidos!
 
   Tryton 
 
+-- [libres.png]
+Software Libre
 
--- [lukio.jpg]
+<i>"Seamos libres lo demas no importa nada"</i>
 
-¿Who am I?
-
- ❥ Luciano Rossi
- ❥ Software developer (libre)
-    
-   (https://github.com/lukio)
-   (https://bitbucket.org/lukio)
-
--- [ayni.png]
-
- ❥ lukio
- ❥ Cooperativa de Trabajo
-
-   (Video: http://gcoop.coop/codigos-cooperativos)
+ ❥ usar
+ ❥ estudiar
+ ❥ distribuir
+ ❥ mejorar
 
 --
 
@@ -104,39 +103,18 @@ CLI Python
 -- [proteus.png]
 
 --
-flask_tryton
+¿Y la web?
 
-Construir tu sitio web sobre Flask, con Tryton como Backend
+ * flask_tryton: https://pypi.python.org/pypi/flask_tryton
+ * User application: Versiones >= 4.2 -> Crear routes usando Werkzug
 
-@app.route('/rest/v1/invoices/<record("account.invoice"):invoice>', methods=['POST'])
-@auth.login_required
-@tryton.transaction()
-def get_report(invoice):
-    "get report"
+-- [flask2.png]
 
-    InvoiceReport = tryton.pool.get('account.invoice', type='report')
-    try:
-        type_, file_data, print_, name = InvoiceReport.execute([invoice.id], {})
-    except:
-        abort(404, u'Nonexistent invoice')
-    file_data_encode = base64.b64encode(str(file_data))
-    data = {
-        'invoice_id': invoice.id,
-        'state': invoice.state,
-        'report_name': name,
-        'report_data': file_data_encode,
-        'report_type': mimetypes.types_map['.'+type_],
-        'report_ext': type_,
-    }
+-- [chronos.png] [bottom-right] 
 
-    return jsonify({'data': data}), 200
-
---
-galatea (flask_tryton)
-
-Sitio web en Flask que utiliza a Tryton como backend para armar una tienda virtual
-
-https://bitbucket.org/zikzakmedia/tryton_galatea
+Crear una aplicación agregando routes en tu módulo usando Werkzug. 
+Un ejemplo que podemos encontrar:
+https://addons.mozilla.org/en-US/firefox/addon/tryton-chronos/
 
 --
 Contribuir en Tryton
@@ -172,4 +150,4 @@ Tryton Argentina
     subdiario: Reportes que generan el subdiario
     citi_afip: Informativo de Compras y Ventas
 
--- [preguntas.png] [font=Sans 100px] [transition=spin-text]
+-- [questions_alf.png] [font=Sans 100px] [transition=spin-text] [bottom-right] 
