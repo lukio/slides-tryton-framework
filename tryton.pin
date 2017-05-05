@@ -8,9 +8,15 @@
 ¿Quienes somos?
 
  ❥ Luciano Rossi
+ ❥ Pablo Vannini
 
- ❥ Sebastián Marró
-    
+-- [ayni.png]
+
+ ❥ lukio
+ ❥ Cooperativa de Trabajo
+
+   (Video: http://gcoop.coop/codigos-cooperativos)
+
 -- 
 ¡Bienvenidos!
 
@@ -25,6 +31,25 @@ Software Libre
  ❥ estudiar
  ❥ distribuir
  ❥ mejorar
+
+--
+ ❥ ¿Por qué un sistema de gestión?
+ ❥ ¿Por qué un ERP?
+
+  ✔ Sistematización
+  ✔ Optimización
+  ✔ Mejorar seguridad de datos
+
+--
+ ❥ Mejorar gestión de la cooperativa
+
+  Tryton nos aporta:
+   ✔ Facturación electrónica
+   ✔ IVA Ventas / Compras
+   ✔ Babi (Business Intelligence)
+   ✔ Gestion cooperativa
+
+¿Qué otra cosa necesita mi cooperativa?
 
 --
 
@@ -147,7 +172,13 @@ Tryton Argentina
     account_retencion_ar: Retenciones
     bank_ar: Incorpora los datos de bancos de Argentina.
     cooperative_ar: Gestion de Cooperativa (Recibos, Vacaciones, Socios, etc)
-    subdiario: Reportes que generan el subdiario
+    subdiario: Reportes que generan el subdiario (IVA Ventas / IVA Compras)
     citi_afip: Informativo de Compras y Ventas
+    sale_pos_ar: Ventas: Integración con la creación de factura electrónica.
+    account_arba: Integración con ARBA.
+    recover_invoice_ar: Recuperación de factura electrónica (AFIP).
+    current_account: Informe cuenta corriente de una Entidad.
+    account_report_ar: Localización de los reportes de account.
+    contract_discount: Agrega descuentos al módulo contract.
 
 -- [questions_alf.png] [font=Sans 100px] [transition=spin-text] [bottom-right] 
